@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4" >
+    
+    <TextView
+        android:id="@+id/title_section"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        
+        android:textColor="#454545"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+	</TextView>
+	
+    <TextView
+        android:id="@+id/bysection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center_horizontal"
+
+        android:textColor="#454545"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif" 
+        android:text="@string/app_version">
+	</TextView>    
+	
+
+</RelativeLayout>

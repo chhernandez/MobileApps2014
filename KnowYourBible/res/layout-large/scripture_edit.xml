@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7E4FD"    
+     >
+
+   <EditText android:id="@+id/passagetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passage_hint" 
+        android:textSize="30sp"></EditText>   
+        
+    <EditText android:id="@+id/booktext"
+        android:layout_below="@id/passagetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/book_hint" 
+        android:textSize="30sp"></EditText>    
+   
+    <EditText android:id="@+id/chaptertext"
+        android:layout_below="@id/booktext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/chapter_hint" 
+        android:textSize="30sp"
+        ></EditText> 
+    
+    <EditText android:id="@+id/versetext"
+        android:layout_below="@id/chaptertext"
+        android:inputType="number"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/verse_hint" 
+        android:textSize="30sp"
+        ></EditText>         
+   
+   
+   	<Button
+            android:id="@+id/saveScriptureButton"
+            android:layout_below="@id/versetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/save_button_label"
+            android:textSize="35sp" >
+    	</Button>      
+    
+
+        
+
+    
+</RelativeLayout>

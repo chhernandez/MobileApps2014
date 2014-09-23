@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7E4FD"    
+     >
+
+   <EditText android:id="@+id/passagetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passage_hint" 
+        android:textSize="30sp"></EditText>   
+        
+   <Spinner 
+       android:id="@+id/sp_scripturebook"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/passagetext"
+       android:entries="@array/book_array"
+       android:entryValues="@array/book_array"
+       android:spinnerMode="dialog"
+       android:prompt="@string/book_prompt"
+
+       />
+   
+      <Spinner 
+       android:id="@+id/sp_scripturechapter"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/sp_scripturebook"
+       android:entries="@array/chapter_array"
+       android:entryValues="@array/chapter_array"
+       android:spinnerMode="dialog"
+       android:prompt="@string/book_prompt"
+
+       />
+      
+      <Spinner 
+       android:id="@+id/sp_scriptureverse"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/sp_scripturechapter"
+       android:entries="@array/verse_array"
+       android:entryValues="@array/verse_array"
+       android:spinnerMode="dialog"
+       android:prompt="@string/verse_prompt"
+
+       />
+      
+   	<Button
+            android:id="@+id/saveScriptureButton"
+            android:layout_below="@id/sp_scriptureverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/save_button_label"
+            android:textSize="35sp" >
+    	</Button>      
+    
+
+
+    
+</RelativeLayout>

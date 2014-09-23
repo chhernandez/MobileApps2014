@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/addscripture"
+        android:title="@string/addscripture_label"
+        ></item>
+
+    <item
+        android:id="@+id/listbooks"
+        android:title="@string/listbooks_label"
+        ></item>
+    
+    <item
+        android:id="@+id/listchapters"
+        android:title="@string/listchapters_label"
+        ></item>
+    
+    <item
+        android:id="@+id/listverses"
+        android:title="@string/listverses_label"
+        ></item>    
+        
+    <item
+        android:id="@+id/randomscripture"
+        android:title="@string/randomscripture_label"
+        ></item>    
+    
+</menu>

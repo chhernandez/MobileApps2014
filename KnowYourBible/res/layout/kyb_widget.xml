@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kybwidgetshape"    
+     >
+     
+    <ImageView
+        android:id="@+id/kyb_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:src="@drawable/icon"
+        android:layout_alignParentLeft="true"
+   
+		android:padding="5dp"
+        >
+        
+    </ImageView>
+ 
+  
+    
+    
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+ 		android:padding="5dp"     
+		android:layout_toRightOf="@id/kyb_icon"  
+		android:textColor="#ffffff"
+        >
+        
+    </TextView>
+     
+
+     <TextView
+        android:id="@+id/allpassageTextView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:layout_margin="5dp"
+		android:textIsSelectable="true"
+		android:layout_below="@id/kyb_icon"
+		android:layout_centerVertical="true"
+		android:gravity="center"
+		android:padding="5dp"
+		android:textColor="#d2d2d2"
+        ></TextView>   
+    
+
+</RelativeLayout>

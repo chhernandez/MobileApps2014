@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="book_array">
+		<item>@string/book_1</item>
+		<item>@string/book_2</item>
+		<item>@string/book_3</item>
+	</string-array>
+
+	
+	<string-array name="chapter_array">
+		<item>@string/chapter_1</item>
+		<item>@string/chapter_2</item>
+		<item>@string/chapter_3</item>
+	</string-array>
+	
+	<string-array name="verse_array">
+		<item>@string/verse_1</item>
+		<item>@string/verse_2</item>
+		<item>@string/verse_3</item>
+	</string-array>
+	
+	<string-array name="all_books_array">
+	    <item>@string/book1</item>
+		<item>@string/book2</item>
+		<item>@string/book3</item>
+		<item>@string/book4</item>
+		<item>@string/book5</item>
+		<item>@string/book6</item>
+		<item>@string/book7</item>
+		<item>@string/book8</item>
+		<item>@string/book9</item>
+		<item>@string/book10</item>
+		<item>@string/book11</item>
+		<item>@string/book12</item>
+		<item>@string/book13</item>
+		<item>@string/book14</item>
+		<item>@string/book15</item>
+		<item>@string/book16</item>
+		<item>@string/book17</item>
+		<item>@string/book18</item>
+		<item>@string/book19</item>
+		<item>@string/book20</item>
+		<item>@string/book21</item>
+		<item>@string/book22</item>
+		<item>@string/book23</item>
+		<item>@string/book24</item>
+		<item>@string/book25</item>
+		<item>@string/book26</item>
+		<item>@string/book27</item>
+		<item>@string/book28</item>
+		<item>@string/book29</item>
+		<item>@string/book30</item>
+		<item>@string/book31</item>
+		<item>@string/book32</item>
+		<item>@string/book33</item>
+		<item>@string/book34</item>
+		<item>@string/book35</item>
+		<item>@string/book36</item>
+		<item>@string/book37</item>
+		<item>@string/book38</item>
+		<item>@string/book39</item>
+		<item>@string/book40</item>
+		<item>@string/book41</item>
+		<item>@string/book42</item>
+		<item>@string/book43</item>
+		<item>@string/book44</item>
+		<item>@string/book45</item>
+		<item>@string/book46</item>
+		<item>@string/book47</item>
+		<item>@string/book48</item>
+		<item>@string/book49</item>
+		<item>@string/book50</item>
+		<item>@string/book51</item>
+		<item>@string/book52</item>
+		<item>@string/book53</item>
+		<item>@string/book54</item>
+		<item>@string/book55</item>
+		<item>@string/book56</item>
+		<item>@string/book57</item>
+		<item>@string/book58</item>
+		<item>@string/book59</item>
+		<item>@string/book60</item>
+		<item>@string/book61</item>
+		<item>@string/book62</item>
+		<item>@string/book63</item>
+		<item>@string/book64</item>
+		<item>@string/book65</item>
+		<item>@string/book66</item>
+	</string-array>
+</resources>

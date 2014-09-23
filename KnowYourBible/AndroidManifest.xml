@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="team.kyb"
+    android:versionCode="1"
+    android:versionName="1.0" 
+ 	android:installLocation="preferExternal"    
+    >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+			android:name="team.kyb.SplashScreen"
+			android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="team.kyb.MainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+         <activity 
+            android:name="team.kyb.database.UpdateScripture"
+            android:label="@string/update_label">
+            
+        </activity>       
+ 
+         <activity
+            android:name="team.kyb.database.EditScripture"
+            android:label="@string/editscripture_label" >
+        </activity>  
+         <activity
+            android:name="team.kyb.database.AddScripture"
+            android:label="@string/addscripture_label" >
+        </activity>                  
+        
+        <activity
+            android:name="team.kyb.database.DisplayBooks"
+            android:label="@string/displaybooks_label" >
+        </activity>     
+        
+        <activity
+            android:name="team.kyb.database.DisplayChapters"
+            android:label="@string/displaychapters_label" >
+        </activity>  
+        
+        <activity
+            android:name="team.kyb.database.DisplayVerses"
+            android:label="@string/displayverses_label" >
+        </activity>         
+        
+      	<activity
+            android:name="team.kyb.database.RandomScripture"
+            android:label="@string/randomscripture_label" >
+        </activity>  
+        
+        <activity
+            android:name="team.kyb.database.Scriptures"
+            android:label="@string/scriptures_label" >
+        </activity>   
+        
+        <activity
+            android:name="team.kyb.extragames.MoreGames"
+            android:label="@string/moreGame_label" >
+        </activity> 
+        
+        <activity
+            android:name="team.kyb.extragames.FillInTheBlankMain"
+            android:label="@string/fillin_label" >
+        </activity> 
+        
+        <activity
+            android:name="team.kyb.extragames.HangmanMain"
+            android:label="@string/hangman_label" >
+        </activity>         
+
+        <activity
+            android:name="team.kyb.animationAPI.WinEffect"
+            >
+        </activity> 
+        
+        <activity
+            android:name="team.kyb.animationAPI.LoseEffect"
+            >
+        </activity> 
+   
+      	<activity
+            android:name="team.kyb.iknow.IKnowGame"
+            android:label="@string/iknow_label" >
+        </activity>    
+     
+      	<activity
+      	    android:name="team.kyb.Settings"
+      	    android:label="@string/settings_label"
+      	    >
+      	    
+      	</activity>
+      	
+      	
+       	<receiver 
+      	    android:icon="@drawable/icon"
+      	    android:label="@string/kybwidgetlabel"
+      	    android:name="team.kyb.DailyScriptureWidget">
+      	    <intent-filter>
+      	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      	    </intent-filter>
+      	    
+			<meta-data
+			    android:name="android.appwidget.provider"
+			    android:resource="@xml/kyb_widgetinfo"
+			    >
+			    
+			</meta-data>
+      	    
+      	</receiver>                   
+        
+    </application>
+
+</manifest>

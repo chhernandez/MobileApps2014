@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7E4FD"    
+     >
+     
+     <TextView
+        android:id="@+id/allpassageTextView"
+        style="@style/passageStyleLG"
+		android:textIsSelectable="true"
+        ></TextView>   
+    
+    <TextView
+        android:id="@+id/passageTextView"
+        style="@style/passageStyle"
+        android:visibility="gone"
+        ></TextView>
+
+  	<TextView
+        android:id="@+id/bookTextView"
+        style="@style/bookStyle"
+        android:visibility="gone"
+        ></TextView>
+  	
+         
+    <TextView
+        android:id="@+id/chapterTextView"
+        style="@style/chapterStyle"
+        android:visibility="gone"
+        ></TextView>
+    
+
+  
+   
+    <TextView
+        android:id="@+id/verseTextView"
+        style="@style/verseStyle"
+        android:visibility="gone"
+        ></TextView>   
+         
+</RelativeLayout>

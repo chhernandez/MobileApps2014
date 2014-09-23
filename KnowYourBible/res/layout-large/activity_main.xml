@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/background3"    
+     >
+
+    <Button
+        android:id="@+id/btn_IKnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="25dp"         
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:onClick="startIKnow"
+        android:text="@string/iknow_label" />
+    
+     <Button
+        android:id="@+id/btn_Scriptures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_IKnow"    
+        android:textStyle="bold"
+        android:textColor="#ffffff"  
+        android:textSize="25sp"                     
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:onClick="startScriptures"
+        android:text="@string/scriptures_label" />  
+         
+     <Button
+        android:id="@+id/btn_MoreGames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Scriptures"  
+        android:textStyle="bold"
+        android:textColor="#ffffff"  
+        android:textSize="25sp"                       
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:onClick="startGames"
+        android:text="@string/games_label" />  
+        
+      <TextView
+        android:id="@+id/contactinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"    
+        android:background="#ffffff"
+        android:autoLink="all"
+        android:textSize="20sp" 
+        android:text="@string/mycontactinfo"
+        android:padding="10dp"
+        android:textColor="#000000">
+	</TextView>        
+     
+
+</RelativeLayout>

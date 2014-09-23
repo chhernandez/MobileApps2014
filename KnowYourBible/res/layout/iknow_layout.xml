@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dip" 
+    android:background="#D7E4FD"  
+>
+
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="5dp"
+    	android:paddingBottom="5dp"
+    >
+    
+        <TextView 
+        	android:id="@+id/correct"
+        	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"    
+       		android:gravity="left"
+            android:layout_weight="1"
+       		android:text="@string/correct_label"
+        />
+        
+        <TextView
+        	android:id="@+id/numCorrect"    
+        	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"   
+       		android:text="0"
+       		android:gravity="left"
+            android:layout_weight="25"
+        />
+        
+    <ImageButton 
+		android:id="@+id/imageButton" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/tts_desc" 
+		android:src="@drawable/soundon4" 
+		android:gravity="right"
+		android:layout_weight="1"
+		android:background="#D7E4FD"
+		android:layout_marginRight="50dp"
+		/>    
+        
+        <TextView 
+        	android:id="@+id/attemps"
+        	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"    
+       		android:gravity="right"
+            android:layout_weight="1"
+       		android:text="@string/attempts_label"
+        />
+       	
+        <TextView
+        	android:id="@+id/numAttempts"    
+        	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content" 
+       		android:layout_marginLeft="3dp"  
+       		android:text="0"
+       		android:gravity="left"
+            android:layout_weight="1"
+        />
+        
+    </LinearLayout>   
+    
+    <TextView
+        android:id="@+id/textview_text"
+        style="@style/NiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:text="@string/ready_label" 
+        android:textIsSelectable="true"
+        />
+    
+    <TextView
+        android:id="@+id/textview_book_promt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/book_prompt"
+        android:paddingLeft="10dp"
+        android:textSize="17sp" />
+    
+    <Spinner
+        android:id="@+id/spinner_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/book_array"
+        android:entryValues="@array/book_array"
+		android:spinnerMode="dialog"
+		android:prompt="@string/book_prompt"
+	/>
+    
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="5dp"
+    >
+        <TextView
+        android:id="@+id/textview_chapter_promt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/chapter_prompt"
+        android:paddingLeft="10dp"
+        android:textSize="17sp" 
+        android:layout_weight="1"
+        />
+        
+        <TextView
+        android:id="@+id/textview_verse_promt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/verse_prompt"
+        android:paddingLeft="10dp"
+        android:textSize="17sp" 
+        android:layout_weight="1"
+        />
+        
+    </LinearLayout>   
+    
+  	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    >
+	    
+      	<Spinner
+        	android:id="@+id/spinner_chapter"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:entries="@array/chapter_array"
+        	android:entryValues="@array/chapter_array"
+			android:layout_weight="1"
+			android:spinnerMode="dialog"
+			android:prompt="@string/chapter_prompt"
+      	/> 
+      	
+		<TextView
+		    android:id="@+id/colon5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=" : " 
+		    android:textColor="#000000"	    
+		    android:textSize="20sp"
+		    android:paddingTop="3dp"
+		    />
+	    
+    	<Spinner
+        	android:id="@+id/spinner_verse"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:entries="@array/verse_array"
+        	android:entryValues="@array/verse_array"
+			android:layout_weight="1"
+			android:spinnerMode="dialog"
+			android:prompt="@string/verse_prompt"
+      	/>   
+  	
+  	</LinearLayout>   
+  	
+
+
+     <TextView
+        android:id="@+id/game_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+  	    android:layout_gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:textSize="15sp" />	 
+        
+   	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+     	android:paddingTop="8dp"   	
+    >    
+        
+   	<Button
+  	    android:id="@+id/button_submit"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_gravity="left"
+  	    android:text="@string/submit" 
+  	    android:layout_margin="10dp"
+  	    android:layout_weight="1"
+  	/>    	
+  	
+  	<Button
+  	    android:id="@+id/next_iknow"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_gravity="right"
+  	    android:text="@string/next_label" 
+  	    android:layout_margin="10dp"
+  	    android:layout_weight="1"
+  	/>
+	</LinearLayout>
+	
+  	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    >   	
+	
+   	        <TextView 
+        	android:id="@+id/highscore"
+        	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"    
+       		android:gravity="center"
+            android:layout_weight="1"
+       		android:text="@string/highscore_label"
+        />
+        
+        <TextView
+        	android:id="@+id/numhighscore"    
+        	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"   
+       		android:text="0"
+       		android:gravity="center"
+            android:layout_weight="1"
+        />
+        </LinearLayout>
+
+</LinearLayout>
+

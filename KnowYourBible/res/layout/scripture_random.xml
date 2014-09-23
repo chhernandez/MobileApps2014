@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#D7E4FD"    
+    >
+   
+	<TextView 
+	    android:id="@+id/passageLView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"	    
+	    android:textStyle="italic"	
+	    android:textSize="20sp"   
+	    android:textIsSelectable="true" 
+	    >
+	    
+	
+	</TextView>
+	
+	<TextView
+	    android:id="@+id/bookLView"
+	    android:layout_below="@id/passageLView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_marginLeft="5dp"   
+	    android:textSize="20sp" 
+		android:textIsSelectable="true"
+	    >
+
+	</TextView>
+	
+	
+	<TextView
+	    android:id="@+id/space3"
+	    android:layout_below="@id/passageLView"
+	    android:layout_toRightOf="@id/bookLView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:textSize="20sp"
+	    android:text=" ">
+	
+	</TextView>
+	
+	<TextView
+	    android:id="@+id/chapterLView"
+	    android:layout_below="@id/passageLView"
+	    android:layout_toRightOf="@id/space3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp" >
+	    
+	</TextView>	
+	<TextView
+	    android:id="@+id/colon3"
+	    android:layout_below="@id/passageLView"
+	    android:layout_toRightOf="@id/chapterLView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=":" 
+	    android:textSize="20sp">
+	
+	</TextView>
+	<TextView
+	    android:id="@+id/verseLView"
+	    android:layout_below="@id/passageLView"
+	    android:layout_toRightOf="@id/colon3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp" ></TextView>
+	    
+
+</RelativeLayout>

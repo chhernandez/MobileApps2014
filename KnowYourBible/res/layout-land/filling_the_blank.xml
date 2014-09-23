@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main_Falling" 
+    android:background="#D7E4FD" >
+
+    <TextView
+        android:id="@+id/scripture_fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" 
+        android:text="w1aaaaaaaaaaaaaa"/>
+
+    <EditText
+        android:id="@+id/order1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/word1"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@+id/word1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/word1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scripture_fill"
+        android:layout_below="@+id/scripture_fill"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:text="w1"
+	 />
+
+    <EditText
+        android:id="@+id/order2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/order1"
+        android:layout_below="@+id/order1"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number" />
+    
+    <EditText
+        android:id="@+id/order3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/order2"
+        android:layout_below="@+id/order2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number" />
+    
+    <EditText
+        android:id="@+id/order4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/order3"
+        android:layout_below="@+id/order3"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/word2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/order2"
+        android:layout_alignBottom="@+id/order2"
+        android:layout_alignLeft="@+id/word1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/word3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/order3"
+        android:layout_alignBottom="@+id/order3"
+        android:layout_alignLeft="@+id/word2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/word4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/order4"
+        android:layout_alignBottom="@+id/order4"
+        android:layout_alignLeft="@+id/word3"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scripture_fill"
+        android:layout_alignParentRight="true"
+        android:text="@string/submit" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_alignParentRight="true"
+        android:text="@string/newgame" 
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/statusFill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+       	android:layout_alignParentRight="true"
+       	android:layout_marginRight="15dp"
+       	android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

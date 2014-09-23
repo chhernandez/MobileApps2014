@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main_Falling"
+    android:background="#D7E4FD" 
+     >
+
+    <TextView
+        android:id="@+id/scripture_hangman"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:textIsSelectable="true"
+        />
+    
+     <TextView
+        android:id="@+id/word_hang_man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:textSize="30sp" />   
+    
+    <TableLayout
+        android:id="@+id/keyboard_hangman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word_hang_man"
+        android:layout_marginTop="50dp" >
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/q"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="Q"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/w"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="W"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/e"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="E"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/r"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="R"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/t"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="T"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/y"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="Y"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/u"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="U"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/i"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="I"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/o"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="O"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/p"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="P"
+                android:textSize="@dimen/letter_choice_size" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/a"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="A"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/s"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="S"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/d"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="D"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/f"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="F"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/g"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="G"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/h"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="H"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/j"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="J"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/k"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="K"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/l"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="L"
+                android:textSize="@dimen/letter_choice_size" />
+
+            
+        </TableRow>
+        
+        <TableRow android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/z"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="Z"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/x"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="X"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/c"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="C"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/v"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="V"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/b"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="B"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/n"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="N"
+                android:textSize="@dimen/letter_choice_size" />
+
+            <Button
+                android:id="@+id/m"
+                android:layout_width="@dimen/letter_choice"
+                android:layout_height="@dimen/letter_choice"
+                android:text="M"
+                android:textSize="@dimen/letter_choice_size" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countValue"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textSize="30sp" />
+
+
+    
+    <TextView
+        android:id="@+id/countValue"
+        android:layout_below="@+id/keyboard_hangman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/countValue2"
+        android:layout_below="@+id/keyboard_hangman"
+        android:layout_toRightOf="@+id/countValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="22dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp" />    
+
+    <ImageView
+        android:id="@+id/hangmanView00"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman" />
+    
+    <ImageView
+        android:id="@+id/hangmanView01"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman" />
+    
+    <ImageView
+        android:id="@+id/hangmanView02"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman" />
+    
+    <ImageView
+        android:id="@+id/hangmanView03"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman" />
+    
+    <ImageView
+        android:id="@+id/hangmanView04"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman" />
+    
+    <ImageView
+        android:id="@+id/hangmanView05"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman" />
+    
+    <ImageView
+        android:id="@+id/hangmanView06"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/keyboard_hangman"
+        android:layout_below="@+id/scripture_hangman" />
+    
+    <Button
+        android:id="@+id/newGameButton"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:text= "@string/newgame" />
+
+</RelativeLayout>

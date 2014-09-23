@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Know Your Bible</string>
+    <string name="app_version">Version 3.0</string>   
+    
+    <string name="iknow_label">I Know That Scripture</string>
+    <string name="games_label">More Games</string>
+    <string name="hangman_label">Hangman</string>
+    <string name="kybwidgetlabel">KYB Daily Scripture</string>  
+    
+    <string name="fillin_label">Fill in the blank</string>
+    <string name="moreGame_label">Extra Games</string>    
+    
+    <string name="scriptures_label">Scriptures Database</string>
+    <string name="settings_label">Settings</string>
+    <string name="help_label">Help</string>
+    <string name="exit_label">Exit Game</string>
+    <string name="about_label">About</string>
+    <string name="reset_label">Reset Score</string>
+    
+	<string name="correct_label">Correct: </string>   
+	<string name="attempts_label">Wrong: </string>
+	<string name="ready_label">Ready: </string>
+	<string name="next_label"> Next </string>
+	<string name="correct_label2">Correct!</string>
+	<string name="incorrect_label">Incorrect!</string>
+	
+	<string name="guess_label">Guesses left: </string>
+	<string name="youwin_label">YOU WIN</string>
+	<string name="youlose_label">YOU LOSE</string>
+	<string name="continue_label">CONTINUE!</string>	
+	
+	<string name="wrongb">Wrong Book</string>
+	<string name="wrongbc">Wrong Book, Chapter</string>
+	<string name="wrongbv">Wrong Book, Verse</string>
+	<string name="wrongc">Wrong Chapter</string>
+	<string name="wrongcv">Wrong Chapter, Verse</string>
+	<string name="wrongv">Wrong Verse</string>
+	<string name="wrongbcv">Wrong Book, Chapter, Verse</string>		
+	<string name="wronganswer">Sorry! The answer is </string>	
+	
+
+    <string name="addscripture_label">Add New</string>
+	<string name="listbooks_label">List Books</string>
+	<string name="listchapters_label">List Chapters</string>
+	<string name="listverses_label">List Verses</string>	
+	<string name="displaybooks_label">Books</string>
+	<string name="displaychapters_label">Chapters</string>
+	<string name="displayverses_label">Verses</string>
+	<string name="randomscripture_label">Random</string>
+		
+	<string name="editscripture_label">Edit</string>
+	<string name="deletescripture_label">Delete</string>
+	
+	<string name="highscore_label">High Score: </string>	
+	
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>	
+	
+    <string name="confirmDelete">Are You Sure?</string>
+    <string name="confirmDeleteMessage">This will delete the scripture.</string>	
+	<string name="addedit_label">Add/Edit</string>
+	<string name="update_label">Update</string>
+	<string name="passage_hint">Enter passage here</string>
+	<string name="book_hint">Enter book name (ex. 1 John, Acts)</string>
+	<string name="chapter_hint">Enter chapter number</string>
+	<string name="verse_hint">Enter verse number (only one)</string>
+	<string name="save_button_label">Save</string>
+	<string name="vpassageTitle">Passage text is required</string>
+	<string name="vpassageMessage">Please enter passage text</string>
+	<string name="vbookTitle">Bible book name is required</string>
+	<string name="vbookMessage">Please enter Bible book name</string>	
+	<string name="vchapterTitle">Chapter is required</string>
+	<string name="vchapterMessage">Please enter chapter number</string>	
+	<string name="vverseTitle">Verse number is required</string>
+	<string name="vverseMessage">Please enter verse number</string>	
+	<string name="vButton">OK</string>
+	
+	<string name="tts_desc">Read Scripture</string>	
+	
+	<string name="newline">\n</string>
+	<string name="newgame">New Game</string>		
+	
+	<string name="aboutgame">Know Your Bible (KYB) is a fun and educational game to help anyone learn and memorize Bible scriptures.\n
+	    \n
+	    KYB was created as a team course project in CS378 Mobile Computing at The University of Texas at Austin during the Fall 2013 semester.\n
+	    \n
+	    Date Created: December 15, 2013\n
+	    Created by: Carlos Hernandez, Khuong Thai, and Hoang Pham\n
+	    </string>
+	    
+	<string name="mycontactinfo">"Please contact us at carloswantsmail@gmail.com or leave your review at https://play.google.com/store/apps/details?id=team.kyb&amp;hl=en"</string>	
+	
+	<string name="helpgame">1) To start the game click on the KYB icon on your home screen or application list.\n
+	    You can also install the KYB Daily Scripture Widget on your home screen and click the icon on the top left corner to launch the application\n
+	    The KYB Widget will display today\'s date and the scripture of the day.  The scripture will change every 12 hours.\n
+	    	2) The Welcome Screen will display for a few seconds to setup the scriptures database and installation file.\n
+	    	3) After the Welcome Screen, the Main Menu screen will display three buttons: I Know That Scripture, Scriptures Database, and More Games.\n
+	    	4) You have a 4 menu option on the Main Menu: Scriptures Database, Settings, Help, and About.\n
+	    	Scriptures Database will take you the database interface where you can view, add, update, or delete individual scriptures from the database.\n
+	    	Settings will allow you to turn on or off sounds within the game.\n
+	    	Help will display this dialog box where you can find instruction on how to use the application.\n
+	    	About will display a dialog box with more information about the app such as a short description, date created, and names of developers.\n
+	    	5) I Know That Scripture - This is a fun game where you will see a random scripture and the objective of the game is to guess where you can find that passage in the Bible.
+	    	Select from the drop downs the Bible book, chapter, and verse.  Click Submit to check your answer.  Here are the rules to the game: To reach your high score before 4 wrong answers.
+	    	If you do, you will get a winning animation otherwise you will see the losing game animation.  You can reset your score in the menu option. 
+	    	To exit the game click the back button, or select Exit from the menu options. \n
+	    	  
+	    </string>
+	
+	<string name="passage_a1">Keep your senses, be watchful! Your adversary, the Devil, walks about like a roaring lion, seeking to devour someone.</string>
+	<string name="passage_b1">@string/book60</string>
+	<string name="passage_c1">5</string>
+	<string name="passage_d1">8</string>
+	
+	<string name="passage_a2">Happy are the pure in heart, since they will see God.</string>
+	<string name="passage_b2">@string/book40</string>
+	<string name="passage_c2">5</string>
+	<string name="passage_d2">8</string>
+	
+	<string name="passage_a3">In the beginning God created the heavens and the earth.</string>
+	<string name="passage_b3">@string/book1</string>
+	<string name="passage_c3">1</string>
+	<string name="passage_d3">1</string>
+	
+	<string name="passage_a4">Serve Jehovah with rejoicing. Come in before him with a joyful cry.</string>
+	<string name="passage_b4">@string/book19</string>
+	<string name="passage_c4">100</string>
+	<string name="passage_d4">2</string>
+	
+	<string name="passage_a5">As the last enemy, death is to be brought to nothing.</string>
+	<string name="passage_b5">@string/book46</string>
+	<string name="passage_c5">15</string>
+	<string name="passage_d5">26</string>
+	
+	<string name="passage_a6">Trust in Jehovah with all your heart, and do not rely on your own understanding.</string>
+	<string name="passage_b6">@string/book20</string>
+	<string name="passage_c6">3</string>
+	<string name="passage_d6">5</string>
+	
+	<string name="passage_a7">Not many of you should become teachers, my brothers, knowing that we shall receive heavier judgment.</string>
+	<string name="passage_b7">@string/book59</string>
+	<string name="passage_c7">3</string>
+	<string name="passage_d7">1</string>
+	
+	<string name="passage_a8">You were bought with a price; stop becoming slaves of men.</string>
+	<string name="passage_b8">@string/book46</string>
+	<string name="passage_c8">7</string>
+	<string name="passage_d8">23</string>		
+	
+	<string name="passage_a9">So, then, let us not sleep on as to rest do, but let us stay awake and keep our senses.</string>
+	<string name="passage_b9">@string/book52</string>
+	<string name="passage_c9">5</string>
+	<string name="passage_d9">6</string>
+	
+	<string name="passage_a10">Even those troubled with unclean spirits were cured.</string>
+	<string name="passage_b10">@string/book42</string>
+	<string name="passage_c10">6</string>
+	<string name="passage_d10">18</string>
+	
+	<string name="passage_a11">In time Jehovah commanded the fish, and it vomited Jonah out onto the dry land.</string>
+	<string name="passage_b11">@string/book32</string>
+	<string name="passage_c11">2</string>
+	<string name="passage_d11">10</string>
+	
+	<string name="passage_a12">And the family heads became jealous of Joseph and sold him into Egypt.</string>
+	<string name="passage_b12">@string/book44</string>
+	<string name="passage_c12">7</string>
+	<string name="passage_d12">9</string>
+	
+	<string name="passage_a13">May people know that you, whose name is Jehovah, You alone are the Most High over all the earth.</string>
+	<string name="passage_b13">@string/book19</string>
+	<string name="passage_c13">83</string>
+	<string name="passage_d13">18</string>	
+	
+	<string name="passage_a14">Teach me to do your will, for you are my God. Your spirit is good; may it lead me on level ground.</string>
+	<string name="passage_b14">@string/book19</string>
+	<string name="passage_c14">143</string>
+	<string name="passage_d14">10</string>
+	
+	<string name="passage_a15">Let your words always be gracious, seasoned with salt, so that you will know how you should answer each person.</string>
+	<string name="passage_b15">@string/book51</string>
+	<string name="passage_c15">4</string>
+	<string name="passage_d15">6</string>
+	
+	<string name="passage_a16">Moreover, just as it occurred in the days of Noah, so it will be also in the days of the Son of man.</string>
+	<string name="passage_b16">@string/book42</string>
+	<string name="passage_c16">17</string>
+	<string name="passage_d16">26</string>
+	
+	<string name="passage_a17">Now the man Moses was by far the meekest of all the men on the face of the earth.</string>
+	<string name="passage_b17">@string/book4</string>
+	<string name="passage_c17">12</string>
+	<string name="passage_d17">3</string>
+	
+	<string name="passage_a18">Sanctify them by means of the truth; your word is truth.</string>
+	<string name="passage_b18">@string/book43</string>
+	<string name="passage_c18">17</string>
+	<string name="passage_d18">17</string>		
+	
+	<string name="passage_a19">For all those who sinned without law will also perish without law; but all those who sinned under law will be judged by law.</string>
+	<string name="passage_b19">@string/book45</string>
+	<string name="passage_c19">2</string>
+	<string name="passage_d19">12</string>
+	
+	<string name="passage_a20">He is at God\'s right hand, for he went to heaven, and angels and authorities and powers were made subject to him.</string>
+	<string name="passage_b20">@string/book60</string>
+	<string name="passage_c20">3</string>
+	<string name="passage_d20">22</string>
+		
+	<string name="passage_a21">Jesus Christ is the same yesterday and today, and forever.</string>
+	<string name="passage_b21">@string/book58</string>
+	<string name="passage_c21">13</string>
+	<string name="passage_d21">8</string>	
+	
+	<string name="passage_a22">Also, continue showing mercy to some who have doubts.</string>
+	<string name="passage_b22">@string/book65</string>
+	<string name="passage_c22">1</string>
+	<string name="passage_d22">22</string>	
+	
+	<string name="passage_a23">You are all, in fact, sons of God through your faith in Christ Jesus.</string>
+	<string name="passage_b23">@string/book48</string>
+	<string name="passage_c23">3</string>
+	<string name="passage_d23">26</string>
+	
+	<string name="passage_a24">Get to know Him, and you will be at peace; Then good things will come your way.</string>
+	<string name="passage_b24">@string/book18</string>
+	<string name="passage_c24">22</string>
+	<string name="passage_d24">21</string>	
+	
+	<string name="passage_a25">And they were astounded at his way of teaching, for he was teaching them as one having authority, and not as the scribes.</string>
+	<string name="passage_b25">@string/book41</string>
+	<string name="passage_c25">1</string>
+	<string name="passage_d25">22</string>	
+	
+	<string name="passage_a26">If you love me, you will observe my commandments.</string>
+	<string name="passage_b26">@string/book43</string>
+	<string name="passage_c26">14</string>
+	<string name="passage_d26">15</string>	
+	
+	<string name="passage_a27">Go on walking in wisdom toward those on the outside, making the best use of your time.</string>
+	<string name="passage_b27">@string/book51</string>
+	<string name="passage_c27">4</string>
+	<string name="passage_d27">5</string>
+	
+	<string name="passage_a28">Now undeserved kindness was given to each one of us according to how the Christ measured out the free gift.</string>
+	<string name="passage_b28">@string/book49</string>
+	<string name="passage_c28">4</string>
+	<string name="passage_d28">7</string>
+	
+	<string name="passage_a29">For wherever there are jealousy and contentiousness, there will also be disorder and every vile thing.</string>
+	<string name="passage_b29">@string/book59</string>
+	<string name="passage_c29">3</string>
+	<string name="passage_d29">16</string>
+	
+	<string name="passage_a30">Be wise, my son, and make my heart rejoice, so that I can make a reply to him who taunts me.</string>
+	<string name="passage_b30">@string/book20</string>
+	<string name="passage_c30">27</string>
+	<string name="passage_d30">11</string>	
+	
+	<string name="passage_a31">Therefore, keep encouraging one another and building one another up, just as you are in fact doing.</string>
+	<string name="passage_b31">@string/book52</string>
+	<string name="passage_c31">5</string>
+	<string name="passage_d31">11</string>
+	
+	<string name="passage_a32">Jehova examines the righteous one as well as the wicked one; He hates anyone who loves violence.</string>
+	<string name="passage_b32">@string/book19</string>
+	<string name="passage_c32">11</string>
+	<string name="passage_d32">5</string>	
+	
+	<string name="passage_a33">Salvation belongs to Jehovah. Your blessing is upon your people.</string>
+	<string name="passage_b33">@string/book19</string>
+	<string name="passage_c33">3</string>
+	<string name="passage_d33">8</string>												
+
+	<string name="book1">Genesis</string>
+	<string name="book2">Exodus</string>	
+	<string name="book3">Leviticus</string>	
+	<string name="book4">Numbers</string>
+	<string name="book5">Deuteronomy</string>	
+	<string name="book6">Joshua</string>	
+	<string name="book7">Judges</string>
+	<string name="book8">Ruth</string>	
+	<string name="book9">1 Samuel</string>		
+	<string name="book10">2 Samuel</string>
+	<string name="book11">1 Kings</string>	
+	<string name="book12">2 Kings</string>	
+	<string name="book13">1 Chronicles</string>
+	<string name="book14">2 Chronicles</string>	
+	<string name="book15">Ezra</string>	
+	<string name="book16">Nehemiah</string>
+	<string name="book17">Esther</string>	
+	<string name="book18">Job</string>				
+	<string name="book19">Psalms</string>		
+	<string name="book20">Proverbs</string>
+	<string name="book21">Ecclesiates</string>	
+	<string name="book22">Song of Solomon</string>	
+	<string name="book23">Isaiah</string>
+	<string name="book24">Jeremiah</string>	
+	<string name="book25">Lamentations</string>	
+	<string name="book26">Ezekiel</string>
+	<string name="book27">Daniel</string>	
+	<string name="book28">Hosea</string>	
+	<string name="book29">Joel</string>		
+	<string name="book30">Amos</string>
+	<string name="book31">Obadiah</string>	
+	<string name="book32">Jonah</string>	
+	<string name="book33">Micah</string>
+	<string name="book34">Nahum</string>	
+	<string name="book35">Habakkuk</string>	
+	<string name="book36">Zephaniah</string>
+	<string name="book37">Haggai</string>	
+	<string name="book38">Zechariah</string>	
+	<string name="book39">Malachi</string>		
+	<string name="book40">Matthew</string>
+	<string name="book41">Mark</string>	
+	<string name="book42">Luke</string>	
+	<string name="book43">John</string>
+	<string name="book44">Acts</string>	
+	<string name="book45">Romans</string>	
+	<string name="book46">1 Corinthians</string>
+	<string name="book47">2 Corinthians</string>	
+	<string name="book48">Galatians</string>	
+	<string name="book49">Ephesians</string>		
+	<string name="book50">Philippians</string>
+	<string name="book51">Colossians</string>	
+	<string name="book52">1 Thessalonians</string>	
+	<string name="book53">2 Thessalonians</string>
+	<string name="book54">1 Timothy</string>	
+	<string name="book55">2 Timothy</string>	
+	<string name="book56">Titus</string>
+	<string name="book57">Philemon</string>	
+	<string name="book58">Hebrews</string>
+	<string name="book59">James</string>		
+	<string name="book60">1 Peter</string>	
+	<string name="book61">2 Peter</string>	
+	<string name="book62">1 John</string>	
+	<string name="book63">2 John</string>
+	<string name="book64">3 John</string>	
+	<string name="book65">Jude</string>	
+	<string name="book66">Revelation</string>	
+	
+	<string name="just_letter">Just one letter plz!</string>
+    <string name="guessed_letter">You have guessed: </string>
+    <string name="count_left">Number of guesses left: </string>
+    
+    
+    <string name="joke_honesty">For God loved the world so much that he gave his only-begotten Son, so that everyone exercising faith in him might not be destroyed but have everlasting life.</string>
+	
+	<string name="submit">Submit</string>
+	
+	<string name="book_prompt">Book:</string>
+	<string name="book_default">Book default</string>
+	<string name="book_1">Book 1</string>
+	<string name="book_2">Book 2</string>
+	<string name="book_3">Book 3</string>
+	
+	<string name="chapter_prompt">Chapter:</string>
+	<string name="chapter_default">chapter default</string>
+	<string name="chapter_1">Chapter 1</string>
+	<string name="chapter_2">Chapter 2</string>
+	<string name="chapter_3">Chapter 3</string>
+	
+	
+	<string name="verse_prompt">Verse:</string>
+	<string name="verse_default">verse default</string>
+	<string name="verse_1">Verse 1</string>
+	<string name="verse_2">Verse 2</string>
+	<string name="verse_3">Verse 3</string>
+	
+	
+</resources>

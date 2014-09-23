@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/scriptures"
+
+        android:title="@string/scriptures_label"/>
+    
+    <item
+        android:id="@+id/settings"
+
+        android:title="@string/settings_label"/>
+
+   <item
+        android:id="@+id/help"
+
+        android:title="@string/help_label"/> 
+<!--    <item
+        android:id="@+id/exit"
+
+        android:title="@string/exit_label"/> -->
+   <item
+        android:id="@+id/about"
+
+        android:title="@string/about_label"/>
+    
+</menu>
