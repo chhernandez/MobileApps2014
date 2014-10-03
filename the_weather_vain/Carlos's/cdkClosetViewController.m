@@ -11,6 +11,7 @@
 #import "cdkMasterViewController.h"
 #import "cdkMainViewController.h"
 #import "cdkMoreTableViewController.h"
+#import "cdkEditProfileViewController.h"
 #import <Parse/Parse.h>
 
 BOOL retValue;
@@ -22,6 +23,79 @@ BOOL retValue;
 @end
 
 @implementation cdkClosetViewController
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    
+    if([[alertView title] isEqualToString:@"Reset Closet"])
+    {
+
+        if (buttonIndex == 0)
+        {
+            // Yes, do something
+            
+            
+            if (![PFUser currentUser]) { // No user logged in
+                NSLog(@"current user %@", [PFUser currentUser]);
+                
+                //   [self.parentViewController.tabBarController setSelectedIndex:1];
+                //take the user to login screen if not logged in. chh 04102014
+                cdkMainViewController *viewController = [[cdkMainViewController alloc] init];
+                [self presentViewController:viewController animated:YES completion:nil];
+                
+            } else {
+                NSLog(@"current user %@", [PFUser currentUser]);
+                // Here we check to see if the user has closet items. chh 03162014
+                
+                
+                PFQuery *query = [PFQuery queryWithClassName:@"Closet"];
+                
+                [query whereKey:@"User" equalTo:[PFUser currentUser]];
+                
+                
+                
+                [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
+                    
+                    if (!error) {
+                        // The find succeeded.
+                        NSLog(@"Successfully retrieved %d objects.", objects.count);
+                        // Do something with the found objects
+                        
+                        if (objects.count == 0) {
+                            NSLog(@" No objects to delete: %d objects.", objects.count);
+                        } else {
+                            
+                            
+                            // delete all user closet objects
+                            // just need to delete objects since closet will repopulate default closet upon entry again. chh 04112014
+                            // Do something with the found objects
+                            for (PFObject *object in objects) {
+                                [object deleteInBackground];
+                            }
+                        }
+                        
+                    } // end of no error
+                }]; // end of query
+            }; // end of if no currentuser
+            
+            // The InBackground methods are asynchronous, so any code after this will run
+            // immediately.  Any code that depends on the query result should be moved
+            // inside the completion block above.
+            
+        }
+        else if (buttonIndex == 1)
+        {
+            // No, do nothing and return
+          //  [self.myClosetSwitch setOn:NO];
+        }
+        
+    }; // end of if "Reset Closet"
+    
+    
+}
+
+
 
 
 -(NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -646,4 +720,15 @@ BOOL retValue;
 }
 
 
+- (IBAction)myResetClosetButton:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] init];
+    [alert setTitle:@"Reset Closet"];
+    [alert setMessage:@"Are you sure you want to reset?"];
+    [alert setDelegate:self];
+    [alert addButtonWithTitle:@"Yes"];
+    [alert addButtonWithTitle:@"No"];
+    [alert show];
+    
+    
+}
 @end

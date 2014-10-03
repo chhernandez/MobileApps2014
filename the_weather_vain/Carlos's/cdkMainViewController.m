@@ -519,6 +519,11 @@
     
 }
 
+- (IBAction)mySaveNotificationButton:(id)sender {
+    [self scheduleNotification];
+    
+}
+
 -(void) scheduleNotification
 {
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
@@ -550,7 +555,7 @@
 }
 
 
-- (IBAction)action_save:(id)sender {
-    [self scheduleNotification];
-}
+//- (IBAction)action_save:(id)sender {
+//    [self scheduleNotification];
+//}
 @end

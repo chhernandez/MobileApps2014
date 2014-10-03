@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSArray *typeArray;
 @property (strong, nonatomic) NSArray *typeImages;
+- (IBAction)myResetClosetButton:(id)sender;
 
 //+ (void) createCarName;
 

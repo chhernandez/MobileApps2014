@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface SettingsViewController : UITableViewController
+- (IBAction)mySignOut:(id)sender;
 
 @end

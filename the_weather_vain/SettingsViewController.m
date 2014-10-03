@@ -7,8 +7,9 @@
 //
 
 #import "SettingsViewController.h"
+#import <Parse/Parse.h>
 
-@interface SettingsViewController ()
+@interface SettingsViewController () <UIPageViewControllerDelegate, UIPageViewControllerDataSource, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 @end
 
@@ -140,4 +141,27 @@
 }
 */
 
+- (IBAction)mySignOut:(id)sender {
+    
+    NSLog(@"In the logout function...");
+    /*
+     [PFFacebookUtils unlinkUserInBackground:[PFUser currentUser] block:^(BOOL succeeded, NSError *error) {
+     if (succeeded) {
+     
+     NSLog(@"The user is no longer associated with their Facebook account.");
+     
+     [PFUser logOut];
+     [self.navigationController popViewControllerAnimated:YES];
+     }
+     }];
+     */
+    
+    //   [self.parentViewController.tabBarController setSelectedIndex:1];
+    [PFUser logOut];
+    
+    //   [self.parentViewController.tabBarController setSelectedIndex:3];
+    [self.parentViewController.tabBarController setSelectedIndex:0];
+    //  [self.navigationController popViewControllerAnimated:YES];
+    
+}
 @end

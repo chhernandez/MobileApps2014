@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -515,7 +515,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="GVr-FJ-nRY" customClass="cdkClosetViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="l1e-fa-HuC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="BY1-jL-0vt">
@@ -552,7 +552,15 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Closet" image="first" id="gIG-eO-fJk"/>
-                    <navigationItem key="navigationItem" id="aLr-Ne-9gJ"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="aLr-Ne-9gJ">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="kdr-EN-tT8" userLabel="Bar Button Item - Reset">
+                            <connections>
+                                <action selector="myResetClosetButton:" destination="GVr-FJ-nRY" id="y3f-VZ-cwC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUW-h7-a0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -563,7 +571,7 @@
             <objects>
                 <tableViewController title="Master" id="uDu-BP-N5D" customClass="cdkMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Pdl-Xm-Nv8">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -615,7 +623,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2W0-5O-TZi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="2346"/>
+            <point key="canvasLocation" x="787" y="2346"/>
         </scene>
         <!--Cdk Detail View Controller - Detail-->
         <scene sceneID="Fiy-hB-8C4">
@@ -626,11 +634,11 @@
                         <viewControllerLayoutGuide type="bottom" id="i58-5z-peD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SxK-Qp-LMC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-R0-X9u">
-                                <rect key="frame" x="0.0" y="25" width="320" height="419"/>
+                                <rect key="frame" x="0.0" y="25" width="320" height="532"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="APi-rF-Lfe" userLabel="Content View">
@@ -764,11 +772,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fFj-nB-o7q">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="5wP-Kj-zvT">
-                            <connections>
-                                <segue destination="GVr-FJ-nRY" kind="push" identifier="saveToCloset" id="4GU-of-xvZ"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="5wP-Kj-zvT"/>
                     </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="APi-rF-Lfe" id="EDS-Ae-Cch"/>
@@ -789,7 +793,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQP-0Z-g0l" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="3038"/>
+            <point key="canvasLocation" x="1284" y="2346"/>
         </scene>
         <!--Settings View Controller - Settings-->
         <scene sceneID="lIB-33-eH9">
@@ -931,7 +935,13 @@
                             <outlet property="delegate" destination="Tho-vq-RNR" id="wx0-wq-z6O"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="bDK-kf-6MU"/>
+                    <navigationItem key="navigationItem" title="Settings" id="bDK-kf-6MU">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="tsv-Pj-G4g">
+                            <connections>
+                                <action selector="mySignOut:" destination="Tho-vq-RNR" id="ghu-At-fsr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -1016,26 +1026,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0H-ct-y0O">
-                                <rect key="frame" x="20" y="383" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.088574368959999997" green="0.63678597810000004" blue="0.87215523100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="action_save:" destination="I0f-0x-1Eq" eventType="touchUpInside" id="tTT-Hw-JHx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="VAe-Tc-GGv">
-                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="Tgu-Th-l8F">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="28K-NG-yr7">
                             <connections>
-                                <action selector="mySignOutButton:" destination="I0f-0x-1Eq" id="KFh-tK-B6U"/>
+                                <action selector="mySaveNotificationButton:" destination="I0f-0x-1Eq" id="AbT-4b-UO1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1048,7 +1045,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3n-IT-ONO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="3070"/>
+            <point key="canvasLocation" x="-205" y="2738"/>
         </scene>
         <!--Controller - Home-->
         <scene sceneID="cJ8-fs-Q8Z">
@@ -1261,8 +1258,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wxH-ea-crn"/>
-        <segue reference="sme-Bv-6zz"/>
-        <segue reference="LQ1-cv-7rM"/>
+        <segue reference="Fnm-yM-ST7"/>
+        <segue reference="xPv-dg-qjY"/>
+        <segue reference="KE4-cP-UhJ"/>
     </inferredMetricsTieBreakers>
 </document>
