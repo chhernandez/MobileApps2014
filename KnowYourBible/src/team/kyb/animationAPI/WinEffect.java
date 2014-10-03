@@ -142,7 +142,7 @@ public class WinEffect extends Activity {
 		// create timer to move ball to new position
 		mTmr = new Timer();
 		
-		CountDownTimer a = new CountDownTimer(7000, 1000) {
+		CountDownTimer a = new CountDownTimer(9000, 1000) {
 
 		     public void onTick(long millisUntilFinished) {
 		         time.setText("Congratulations! You Won! Play again in: " + millisUntilFinished / 1000);

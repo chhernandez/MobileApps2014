@@ -4,12 +4,12 @@
         android:id="@+id/reset"
 
         android:title="@string/reset_label"/>
-   <item
-        android:id="@+id/exit"
+<!--    <item -->
+<!--         android:id="@+id/exit" -->
 
-        android:title="@string/exit_label"/>
+<!--         android:title="@string/exit_label"/> -->
     
 
-
+<!-- this is to test change location -->
     
 </menu>

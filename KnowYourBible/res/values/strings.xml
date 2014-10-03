@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+  	<color name="lightblue">#C2EBFF</color>  
+    
+    
     <string name="app_name">Know Your Bible</string>
     <string name="app_version">Version 3.0</string>
     
