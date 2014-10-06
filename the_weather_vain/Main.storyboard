@@ -772,14 +772,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fFj-nB-o7q">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="5wP-Kj-zvT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="chv-EC-ru0">
+                            <connections>
+                                <action selector="mySaveButton:" destination="aTL-4f-uuC" id="deZ-Vx-MmD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="APi-rF-Lfe" id="EDS-Ae-Cch"/>
                         <outlet property="detailDescriptionLabel" destination="5fY-5e-4Mi" id="SR0-On-YlY"/>
                         <outlet property="itemImage" destination="Jak-Lx-QXm" id="Fh6-DJ-3Nf"/>
                         <outlet property="rateView" destination="T2S-hV-qUK" id="4AB-UV-HwG"/>
-                        <outlet property="saveButton" destination="5wP-Kj-zvT" id="p4J-0v-prb"/>
                         <outlet property="scrollView" destination="ZAt-R0-X9u" id="p5e-qa-zRr"/>
                         <outlet property="switchBrisk" destination="R8G-zz-dSS" id="6oN-gg-nTC"/>
                         <outlet property="switchCold" destination="tdW-cF-59f" id="7r2-Hf-Wqb"/>

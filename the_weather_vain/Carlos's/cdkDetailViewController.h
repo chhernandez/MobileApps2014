@@ -38,12 +38,14 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
+//- (IBAction)mySaveItemButton:(id)sender;
 
 
-- (IBAction)actionSave:(id)sender;
+//- (IBAction)actionSave:(id)sender;
 
 
+- (IBAction)mySaveButton:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+//@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 
 @end

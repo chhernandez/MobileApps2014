@@ -12,9 +12,12 @@
 #import "CERangeSlider.h"
 #import "cdkMasterViewController.h"
 #import "cdkClosetViewController.h"
+#import "SettingsViewController.h"
+#import "WVTabBarViewController.h"
 
 
 @interface cdkDetailViewController ()
+
 - (void)configureView;
 @end
 
@@ -238,7 +241,8 @@
 }
 
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+// replace the save navigation to a button action below to avoid stacking screens. chh 10052014
+/* - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
   //  if ([segue.identifier isEqualToString:@"saveCustomDetails"]) {
         //  Save all the data in parse here before going to the closet page. chh 03222014
@@ -294,7 +298,7 @@
         return;
     }
  
-}
+} */
 
 /*//  no longer using the save button. chh 04212014
 
@@ -356,4 +360,62 @@
 }
 */
 
+/*- (IBAction)mySaveItemButton:(id)sender {
+    
+
+    
+}*/
+
+
+- (IBAction)mySaveButton:(id)sender {
+    
+    // go back to action button but within navigation to let user go straight back to main menu without stacking screens. chh 10052014
+    
+    NSLog(@"Saving a new rating =: %f", self.rateView.rating);
+    
+    int mySizzling = 0;
+    int myCold = 0;
+    int myHot = 0;
+    int myMild = 0;
+    int myWarm = 0;
+    int myStatus = 0;
+    int myFrigid = 0;
+    int myBrisk = 0;
+    
+    if (self.switchSizzling.on) { mySizzling = 1; };
+    if (self.switchCold.on) { myCold = 1; };
+    if (self.switchHot.on) { myHot = 1; };
+    if (self.switchMild.on) { myMild = 1; };
+    if (self.switchWarm.on) { myWarm = 1; };
+    if (self.switchStatus.on) { myStatus = 1; };
+    if (self.switchFrigid.on) { myFrigid = 1; };
+    if (self.switchBrisk.on) { myBrisk = 1; };
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Closet"];
+    [query getObjectInBackgroundWithId:[self.detailItem objectId] block:^(PFObject *updateItem, NSError *error) {
+        updateItem[@"Rating"] = [NSNumber numberWithFloat:self.rateView.rating];
+        
+        updateItem[@"Sizzling"] = [NSNumber numberWithInt:mySizzling];
+        updateItem[@"Cold"] = [NSNumber numberWithInt:myCold];
+        updateItem[@"Hot"] = [NSNumber numberWithInt:myHot];
+        updateItem[@"Mild"] = [NSNumber numberWithInt:myMild];
+        updateItem[@"Warm"] = [NSNumber numberWithInt:myWarm];
+        updateItem[@"Status"] = [NSNumber numberWithInt:myStatus];
+        updateItem[@"Frigid"] = [NSNumber numberWithInt:myFrigid];
+        updateItem[@"Brisk"] = [NSNumber numberWithInt:myBrisk];
+        
+        //       updateItem[@"TempMin"] = [NSNumber numberWithFloat:_vrangeSlider.lowerValue];
+        //      updateItem[@"TempMax"] = [NSNumber numberWithFloat:_vrangeSlider.upperValue];
+        [updateItem saveInBackground];
+    }];
+    //take the user to login screen if not logged in. chh 04102014
+    
+      //take the user to login screen if not logged in. chh 04102014
+//    [self.navigationController popViewController];
+//
+ //   SettingsViewController *viewController = [[SettingsViewController alloc] init];
+ //   [self presentViewController:viewController animated:YES completion:nil];
+    
+}
 @end
