@@ -104,8 +104,9 @@
             [self.parentViewController.tabBarController setSelectedIndex:0];
         }
         
-    }
-    else
+    };
+    
+   /* else
     {
         if (buttonIndex == 0)
         {
@@ -167,7 +168,7 @@
         }
         
     }; // end of if else "login required"
-    
+    */
     
 }
 
@@ -493,6 +494,7 @@
  
  }  */
 
+/*
 - (IBAction)myClosetReset:(id)sender {
     
     // retrieve all records from closet with user id. chh 04112014
@@ -517,7 +519,7 @@
     }; // end of my closet switch is on
     
     
-}
+}*/
 
 - (IBAction)mySaveNotificationButton:(id)sender {
     [self scheduleNotification];
