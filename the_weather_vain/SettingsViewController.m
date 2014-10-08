@@ -15,11 +15,22 @@
 
 @implementation SettingsViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.navigationItem.hidesBackButton = YES;
+    }
+    return self;
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.navigationItem.hidesBackButton = YES;
+
     }
     return self;
 }
@@ -31,6 +42,8 @@
     // background image
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"blurredbg.png"]];
     [self.tableView setBackgroundView:imageView];
+    
+    self.navigationItem.hidesBackButton = YES;
     
     // navigation bar
     UINavigationBar *home_NavBar = [self.navigationController navigationBar];

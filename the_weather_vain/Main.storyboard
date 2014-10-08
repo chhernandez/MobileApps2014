@@ -395,7 +395,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CeC-Rq-8dN"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="T49-SO-uYQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gV4-W7-BvT">
@@ -542,7 +542,7 @@
                                 <size key="customSize" width="84" height="99"/>
                                 <connections>
                                     <outlet property="myNewImage" destination="Vd8-wx-bNO" id="Tq4-7I-W0z"/>
-                                    <segue destination="uDu-BP-N5D" kind="push" id="523-D8-4nw"/>
+                                    <segue destination="uDu-BP-N5D" kind="push" identifier="celltomasterpush" id="523-D8-4nw"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -557,6 +557,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Reset" id="kdr-EN-tT8" userLabel="Bar Button Item - Reset">
                             <connections>
                                 <action selector="myResetClosetButton:" destination="GVr-FJ-nRY" id="y3f-VZ-cwC"/>
+                                <segue destination="Tho-vq-RNR" kind="push" identifier="resetpush" id="2oe-OA-hVR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -564,14 +565,14 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUW-h7-a0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247" y="2346"/>
+            <point key="canvasLocation" x="151" y="2346"/>
         </scene>
         <!--Cdk Master View Controller - Master-->
         <scene sceneID="Ruk-jg-J8F">
             <objects>
                 <tableViewController title="Master" id="uDu-BP-N5D" customClass="cdkMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Pdl-Xm-Nv8">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -634,7 +635,7 @@
                         <viewControllerLayoutGuide type="bottom" id="i58-5z-peD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SxK-Qp-LMC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-R0-X9u">
@@ -803,7 +804,7 @@
             <objects>
                 <tableViewController title="Settings" id="Tho-vq-RNR" customClass="SettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="ipb-9a-gPJ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.98431378602981567" green="0.98431378602981567" blue="0.98431378602981567" alpha="1" colorSpace="deviceRGB"/>
                         <color key="tintColor" red="0.0" green="0.56862747669219971" blue="0.66666668653488159" alpha="1" colorSpace="deviceRGB"/>
@@ -978,7 +979,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aqY-MQ-M1S"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="A5U-Yd-u4C">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ft6-tT-PNd">
@@ -1261,8 +1262,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Fnm-yM-ST7"/>
-        <segue reference="xPv-dg-qjY"/>
         <segue reference="KE4-cP-UhJ"/>
+        <segue reference="xPv-dg-qjY"/>
+        <segue reference="2oe-OA-hVR"/>
+        <segue reference="Fnm-yM-ST7"/>
     </inferredMetricsTieBreakers>
 </document>

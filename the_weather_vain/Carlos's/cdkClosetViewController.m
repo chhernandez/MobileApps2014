@@ -75,6 +75,12 @@ BOOL retValue;
                             }
                         }
                         
+ 
+                        NSLog(@"current user %@", [PFUser currentUser]);
+            
+                        
+                        [self createCustomCloset2];
+                        
                     } // end of no error
                 }]; // end of query
             }; // end of if no currentuser
@@ -82,6 +88,10 @@ BOOL retValue;
             // The InBackground methods are asynchronous, so any code after this will run
             // immediately.  Any code that depends on the query result should be moved
             // inside the completion block above.
+            
+
+            
+            
             
         }
         else if (buttonIndex == 1)
@@ -95,6 +105,41 @@ BOOL retValue;
     
 }
 
+
+#pragma mark - Prepare for Segue
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    
+    if ([segue.identifier isEqualToString:@"resetpush"]) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] init];
+        [alert setTitle:@"Reset Closet"];
+        [alert setMessage:@"Are you sure you want to reset?"];
+        [alert setDelegate:self];
+        [alert addButtonWithTitle:@"Yes"];
+        [alert addButtonWithTitle:@"No"];
+        [alert show];
+        
+        
+        
+       // return;
+    }
+    
+    if ([segue.identifier isEqualToString:@"celltomasterpush"]) {
+        
+        
+        UICollectionViewCell *cell = (UICollectionViewCell *)sender;
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+    
+        cdkMasterViewController *myListViewController = (cdkMasterViewController *)segue.destinationViewController;
+        myListViewController.TypeList = [self.typeArray objectAtIndex:indexPath.row];
+        
+   
+    }
+    
+
+    
+}
 
 
 
@@ -619,16 +664,6 @@ BOOL retValue;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Prepare for Segue
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    UICollectionViewCell *cell = (UICollectionViewCell *)sender;
-    NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
-    
-    cdkMasterViewController *myListViewController = (cdkMasterViewController *)segue.destinationViewController;
-    myListViewController.TypeList = [self.typeArray objectAtIndex:indexPath.row];
-    
-}
 
 
 
@@ -721,14 +756,14 @@ BOOL retValue;
 
 
 - (IBAction)myResetClosetButton:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] init];
+  /*  UIAlertView *alert = [[UIAlertView alloc] init];
     [alert setTitle:@"Reset Closet"];
     [alert setMessage:@"Are you sure you want to reset?"];
     [alert setDelegate:self];
     [alert addButtonWithTitle:@"Yes"];
     [alert addButtonWithTitle:@"No"];
     [alert show];
-    
+    */
     
 }
 @end
